@@ -1,0 +1,109 @@
+body {
+    background-color: #232f3e;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 400px;
+    margin: auto;
+    background-color: #37475a;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 100px;
+}
+
+h1 {
+    text-align: center;
+    color: #FF9900;
+}
+
+label, select, input {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+input, select {
+    border: none;
+    background-color: #566573;
+    color: white;
+}
+
+button {
+    background-color: #FF9900;
+    color: black;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #FFAC31;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #FF9900;
+    color: black;
+}
+
+td {
+    background-color: #556;
+    color: white;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+    th, td {
+        display: block;
+        width: 100%;
+    }
+    
+    td::before {
+        content: attr(data-label);
+        float: left;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: #FF9900;
+    }
+    
+    td {
+        clear: left;
+    }
+}
+
+#table-container {
+    max-height: 300px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+/* Style the scrollbar */
+#table-container::-webkit-scrollbar {
+    width: 10px;
+}
+
+#table-container::-webkit-scrollbar-thumb {
+    background-color: #FF9900;
+    border-radius: 10px;
+}
+
+#table-container::-webkit-scrollbar-track {
+    background-color: #556;
+}
+
